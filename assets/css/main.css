@@ -294,3 +294,7 @@ h4:hover a {
 .framed .h-anchor {
   visibility: hidden;
 }
+
+.posts{
+  min-width: 60%;
+}
