@@ -1,9 +1,9 @@
 <footer class="footer">
   <div class="footer__inner">
     {{ if $.Site.Copyright }}
-      <div class="copyright copyright--user">{{ $.Site.Copyright | safeHTML }}</div>
+      <div class="copyright copyright--user">{{replace $.Site.Copyright "{year}" now.Year | safeHTML }}</div>
       {{ else }}
-      {{ partial "logo.html" . }}
+      <!-- {{ partial "logo.html" . }} -->
       <div class="copyright">
 
       </div>
