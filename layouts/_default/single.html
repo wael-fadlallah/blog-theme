@@ -6,9 +6,9 @@
     <h1 class="post-title">{{ .Title | markdownify }}</h1>
     <div class="post-meta">
       {{ if .Date | default nil }}
-        <span class="post-date">
+        <!-- <span class="post-date">
           {{ .Date.Format ($.Site.Params.DateFormatSingle | default "2006-01-02") }}
-        </span>
+        </span> -->
 
         {{ if eq .Type $contentTypeName }}
           {{ if $.Site.Params.LastModDisplay }}
@@ -25,7 +25,7 @@
 
       {{ if $.Site.Params.ShowReadingTime }}
         <span class="post-read-time"
-          >— {{ .ReadingTime }} {{ $.Site.Params.MinuteReadingTime | default "min read" }}</span
+          >{{ .ReadingTime }} {{ $.Site.Params.MinuteReadingTime | default "min read" }}</span
         >
       {{ end }}
     </div>
