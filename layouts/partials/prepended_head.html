@@ -2,3 +2,12 @@
 If you want to include any custom html at the beginning of </head> before scripts or links are declared,
 put it in /layouts/partials/prepended_head.html. Do not put anything in this file - it's only here so that hugo won't throw an error if /layouts/partials/prepended_head.html doesn't exist.
 -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7JT53VNQ4R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7JT53VNQ4R');
+</script>
